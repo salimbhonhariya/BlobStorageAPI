@@ -1,0 +1,28 @@
+﻿AzureBlobStorage
+:
+GET 
+http://localhost:51761/api/azureblob/GetBlobDownload/Stopunverifiedemail_usersfromaccessingtheapplicationinAuth0.docx
+POST
+http://localhost:51761/api/azureblob/upload
+{
+	"fileurl": "c:\\users\\sbhonhariya\\documents\\Stop unverified email_users from accessing the application in Auth0.docx",
+	"filesizeinbytes": "20",
+	"filesizeinkb": "20"
+}
+
+Appsettings.json
+"AzureBlob": {
+   "AzureBlobConnectionString": "DefaultEndpointsProtocol=https;AccountName=salimazurestorage;AccountKey=+uCQXwY2ZXM1sIAr2unicrrGYgfylQGQdMjbgWWJyoFf5H9uMxqsdFk3y+5dJtrxYAxlnt6FrddbO8n4y6kTnA==",
+   "BlobContainerName": "salimazurestorage",
+   "BlobFileDownloadLocation": "C:\\Users\\sbhonhariya\\Documents\\"
+ }
+AccessType
+Public
+Security
+Need Bearer access token with every request
+
+
+Delete
+http://localhost:51761/api/azureblob/delete/Stop unverified email_users from accessing the application in Auth0.docx
+
+
